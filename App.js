@@ -48,11 +48,25 @@ export default function App() {
           Você não está logado. Entre usando sua conta de rede social ou
           cadastre seus dados.
         </Text>
+
+        <View style={styles.socialMediaLoginIcons}>
+          <AkarIcons.InstagramFill
+            color="#2C9196"
+            strokeWidth={2}
+            size={35}
+            style={{ display: "inline" }}
+          />
+          <AkarIcons.TwitterFill
+            color="#2C9196"
+            strokeWidth={2}
+            size={35}
+            style={{ display: "inline" }}
+          />
+        </View>
+        
       </View>
 
-      <View
-        style={styles.blackLine}
-      >
+      <View style={styles.blackLine}>
         <BlackLine color="black" />
       </View>
 
@@ -155,6 +169,15 @@ const styles = StyleSheet.create({
     alignItems: "right",
     bottom: "1%",
     left: "42%",
+  },
+  socialMediaLoginIcons: {
+    flex: 2,
+    paddingVertical: 200,
+    paddingHorizontal: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    bottom: "1%",
   },
   containerWelcome: {
     flex: 1,
