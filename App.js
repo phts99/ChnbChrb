@@ -22,7 +22,7 @@ export default function App() {
           justifyContent: "space-between",
           alignItems: "right",
           bottom: "1%",
-          left: "42%"
+          left: "42%",
         }}
       >
         <AkarIcons.InstagramFill
@@ -50,6 +50,14 @@ export default function App() {
           source={require("./src/assets/logo.png")}
           style={{ width: 100, height: 100 }}
         />
+      </View>
+
+      <View style={styles.containerWelcome}>
+        <Text style={styles.welcomeText}>BEM VINDO</Text>
+        <Text style={styles.welcomeSubText}>
+          Você não está logado. Entre usando sua conta de rede social ou
+          cadastre seus dados.
+        </Text>
       </View>
 
       <View style={styles.container}>
@@ -142,5 +150,20 @@ const styles = StyleSheet.create({
   },
   forgotPasswordText: {
     fontSize: 10,
+  },
+  containerWelcome: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    width: "90%",
+  },
+  welcomeText: {
+    fontWeight: "700",
+    fontSize: 36,
+  },
+  welcomeSubText: {
+    fontWeight: "400",
+    fontSize: 12,
+    textAlign: "center",
   },
 });
