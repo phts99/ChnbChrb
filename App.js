@@ -1,4 +1,5 @@
 import React from "react";
+import * as AkarIcons from "akar-icons";
 import {
   View,
   KeyboardAvoidingView,
@@ -7,11 +8,42 @@ import {
   TouchableOpacity,
   Text,
   StyleSheet,
+  IconContext,
 } from "react-native";
 
 export default function App() {
   return (
     <KeyboardAvoidingView style={styles.background}>
+      <View
+        style={{
+          paddingVertical: 15,
+          paddingHorizontal: 10,
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "right",
+          left: "35%"
+        }}
+      >
+        <AkarIcons.InstagramFill
+          color="#2C9196"
+          strokeWidth={2}
+          size={36}
+          style={{ display: "block" }}
+        />
+        <AkarIcons.TwitterFill
+          color="#2C9196"
+          strokeWidth={2}
+          size={36}
+          style={{ display: "block" }}
+        />
+        <AkarIcons.FacebookFill
+          color="#2C9196"
+          strokeWidth={2}
+          size={36}
+          style={{ display: "block" }}
+        />
+      </View>
+
       <View style={styles.containerLogo}>
         <Image
           source={require("./src/assets/logo.png")}
