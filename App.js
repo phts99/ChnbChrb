@@ -21,25 +21,26 @@ export default function App() {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "right",
-          left: "35%"
+          bottom: "1%",
+          left: "42%"
         }}
       >
         <AkarIcons.InstagramFill
           color="#2C9196"
           strokeWidth={2}
-          size={36}
+          size={20}
           style={{ display: "block" }}
         />
         <AkarIcons.TwitterFill
           color="#2C9196"
           strokeWidth={2}
-          size={36}
+          size={20}
           style={{ display: "block" }}
         />
         <AkarIcons.FacebookFill
           color="#2C9196"
           strokeWidth={2}
-          size={36}
+          size={20}
           style={{ display: "block" }}
         />
       </View>
