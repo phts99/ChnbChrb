@@ -33,6 +33,20 @@ export default function App() {
           autocorrect={false}
           onChangeText={() => {}}
         ></TextInput>
+
+        <TouchableOpacity style={styles.btnForgotPassword}>
+          <Text style={styles.forgotPasswordText}>Esqueceu a senha?</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.btnSubmit}>
+          <Text style={styles.submitText}>ENTRAR</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.btnRegister}>
+          <Text style={styles.registerText}>
+            Ainda não tem conta? Cadastre-se
+          </Text>
+        </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
   );
@@ -64,5 +78,36 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 7,
     fontFamily: "Quicksand",
-  }
+  },
+  btnSubmit: {
+    backgroundColor: "#6FDDE3",
+    width: "90%",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 15,
+    fontSize: 17,
+    borderRadius: 20,
+    padding: 7,
+    height: 45,
+  },
+  submitText: {
+    fontWeight: "700",
+    fontSize: 16,
+  },
+  btnRegister: {
+    marginBottom: 10,
+  },
+  registerText: {
+    fontSize: 16,
+  },
+  btnForgotPassword: {
+    alignItems: "center",
+    justifyContent: "center",
+    width: "170px",
+    height: "50px",
+    padding: 7,
+  },
+  forgotPasswordText: {
+    fontSize: 10,
+  },
 });
