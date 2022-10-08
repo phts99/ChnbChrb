@@ -14,9 +14,7 @@ import {
 export default function App() {
   return (
     <KeyboardAvoidingView style={styles.background}>
-      <View
-        style={styles.socialMediaIcons}
-      >
+      <View style={styles.socialMediaIcons}>
         <AkarIcons.InstagramFill
           color="#2C9196"
           strokeWidth={2}
@@ -50,6 +48,12 @@ export default function App() {
           Você não está logado. Entre usando sua conta de rede social ou
           cadastre seus dados.
         </Text>
+      </View>
+
+      <View
+        style={styles.blackLine}
+      >
+        <BlackLine color="black" />
       </View>
 
       <View style={styles.container}>
@@ -167,4 +171,16 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: "center",
   },
+  blackLine: {
+    paddingVertical: 15,
+    paddingHorizontal: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "right",
+    bottom: "1%",
+  },
 });
+
+const BlackLine = ({ color }) => (
+  <hr style={{ width: "400px", height: "0px", left: "202px", top: "320px" }} />
+);
