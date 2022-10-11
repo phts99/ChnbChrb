@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   Text,
   StyleSheet,
-  IconContext,
 } from "react-native";
 
 export default function App() {
@@ -63,7 +62,6 @@ export default function App() {
             style={{ display: "inline" }}
           />
         </View>
-        
       </View>
 
       <View style={styles.blackLine}>
