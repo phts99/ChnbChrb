@@ -44,8 +44,7 @@ export default function App() {
       <View style={styles.containerWelcome}>
         <Text style={styles.welcomeText}>BEM VINDO</Text>
         <Text style={styles.welcomeSubText}>
-          Você não está logado. Entre usando sua conta de rede social ou
-          cadastre seus dados.
+          Você não está logado. Entre usando os dados cadastrados.
         </Text>
 
         <View style={styles.socialMediaLoginIcons}>
